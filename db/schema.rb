@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(version: 3) do
   create_table "patterns", force: :cascade do |t|
     t.string "title", null: false
     t.json "chart", null: false
-    t.text "paragraph"
+    t.text "paragraph", null: false
     t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
