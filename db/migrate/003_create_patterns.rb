@@ -5,6 +5,7 @@ class CreatePatterns < ActiveRecord::Migration[5.1]
     create_table :patterns do |t|
       t.string :title, null: false
       t.json :chart, null: false
+      t.text :paragraph
       t.references :user, foreign_key: true
 
       t.timestamps
