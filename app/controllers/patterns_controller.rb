@@ -49,6 +49,6 @@ class PatternsController < ApplicationController
 
   # Only allow a trusted parameter "white list" through.
   def pattern_params
-    params.require(:pattern).permit(:title, :chart, :user_id)
+    params.require(:pattern).permit(:title, :chart, :paragraph, :user_id)
   end
 end
